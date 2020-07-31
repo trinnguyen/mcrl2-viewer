@@ -1,8 +1,15 @@
 {
 	"name": "mcrl2-viewer",
 	"displayName": "mCRL2 Viewer",
-	"description": "Visualizer for mCRL2 file",
-	"version": "0.0.1",
+	"description": "Preview mCRL2 model using Graphviz engine (DOT)",
+	"version": "1.0.0",
+	"publisher": "trinnguyen",
+	"license": "MIT",
+	"readme": "README.md",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/trinnguyen/mcrl2-viewer"
+	},
 	"engines": {
 		"vscode": "^1.47.0"
 	},
