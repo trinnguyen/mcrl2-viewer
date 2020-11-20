@@ -1,0 +1,8 @@
+pbes
+nu q0_p0 = q0_p1 && q1__;
+nu q0_p1 = q1_p2 && q1_p2;
+nu q1__ = false;
+nu q1_p2 = true;
+init q0_p0;
+
+

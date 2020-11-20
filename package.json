@@ -2,11 +2,11 @@
 	"name": "mcrl2-viewer",
 	"displayName": "mCRL2 Viewer",
 	"description": "Preview mCRL2 model using Graphviz engine (DOT)",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "trinnguyen",
 	"license": "MIT",
 	"readme": "README.md",
-    "repository": {
+	"repository": {
 		"type": "git",
 		"url": "https://github.com/trinnguyen/mcrl2-viewer"
 	},
@@ -21,6 +21,25 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"languages": [
+			{
+				"id": "pbes",
+				"aliases": [
+					"pbes"
+				],
+				"extensions": [
+					".pbes"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "pbes",
+				"scopeName": "source.pbes",
+				"path": "./syntaxes/pbes.tmLanguage.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "mcrl2-viewer.preview",
@@ -29,7 +48,7 @@
 				"category": "mCRL2"
 			}
 		],
-		"keybindings" : [
+		"keybindings": [
 			{
 				"command": "mcrl2-viewer.preview",
 				"key": "ctrl+shift+v",

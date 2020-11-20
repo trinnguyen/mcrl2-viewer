@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "pbes",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pbes",
+				"match": "\\b(pbes|nu|init)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.pbes",
+				"match": "\\b(true|false)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.pbes"
+}
